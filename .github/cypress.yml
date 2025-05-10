@@ -1,33 +1,26 @@
 name: Run Cypress Tests
 
-# Trigger de quando rodar a pipeline
 on:
   push:
-    branches:
-      - main   # ou master, dependendo de qual branch você usa
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest   # Usa o ambiente Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. Pega o código mais recente
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Instala o Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'    # Defina a versão do Node.js que seu projeto usa
+          node-version: 18
 
-      # 3. Instala as dependências (npm)
       - name: Install dependencies
         run: npm install
 
-      # 4. Roda os testes do Cypress
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npm test

@@ -1,5 +1,5 @@
-import registerPage from "../Pages/register_page";
-
+import RegisterPage from "../Pages/register_page";
+const registerPage = new RegisterPage
 Given(/^que estama na page de Cadastro$/, () => {
 	registerPage.visitPage();
 });

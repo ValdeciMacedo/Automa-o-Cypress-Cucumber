@@ -13,5 +13,5 @@ Cadastro de usuarios na plataforma
     Then tenho meu cadastro realizado com sucesso
 
     Examples:
-      | caso_teste           | name    | surname | address                          | email                  | phone       | gender | hobbies | skill | country   | year | month     | day | pass   | confirmpass |
-      | cadastro com sucesso | Valdeci | Macedo  | Rua Jose Alfredo da Silveira 144 | walmacedo1@hotmail.com | 11953297078 | male   | Movie   | js    | Australia | 1982 | September |  08 | 123@25 |      123@25 |
+      | caso_teste           | name    | surname | address                          | email                  | phone       | gender | hobbies | skill      | country   | year | month     | day | pass   | confirmpass |
+      | cadastro com sucesso | Valdeci | Macedo  | Rua Jose Alfredo da Silveira 144 | walmacedo1@hotmail.com | 11953297078 | Male   | Movie   | Javascript | Australia | 1982 | September |   8 | 123@25 |      123@25 |
